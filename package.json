@@ -4,15 +4,19 @@
   "description": "CLI for BTC converter.",
   "main": "index.js",
   "scripts": {
-    "clear": "rimraf lib",
+    "clear": "rimraf bin",
     "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test:tdd": "npm run test -- --watch",
     "test:coverage": "nyc npm test",
     "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "wm-btc-converter": "bin/main.js"
   },
   "nyc": {
     "reporter": [
