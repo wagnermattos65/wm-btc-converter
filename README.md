@@ -1,5 +1,7 @@
 # BTC Converter
 
+[![Build Status](https://travis-ci.org/wagnermattos/wm-btc-converter.svg?branch=master)](https://travis-ci.org/wagnermattos/wm-btc-converter)
+
 CLI project for BTC converter
 ## Getting Started
 
