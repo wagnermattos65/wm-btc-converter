@@ -1,6 +1,6 @@
 {
   "name": "wm-btc-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI for BTC converter.",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,7 @@
     "prepush": "npm run lint",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --require babel-polyfill",
     "test:tdd": "npm run test -- --watch",
-    "test:coverage": "nyc npm test",
-    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
+    "test:coverage": "nyc npm test"
   },
   "preferGlobal": true,
   "bin": {
@@ -48,7 +47,6 @@
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "chai": "^3.5.0",
-    "coveralls": "^3.0.2",
     "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.13.0",
