@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/wagnermattos/wm-btc-converter.svg?branch=master)](https://travis-ci.org/wagnermattos/wm-btc-converter)
 
-CLI project for BTC converter
+CLI project for BTC converter using API hooks from [bitcoinaverage.com](https://apiv2.bitcoinaverage.com)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
